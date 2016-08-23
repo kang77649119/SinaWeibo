@@ -16,6 +16,7 @@
 		3F97FAA31D6C3961000EB881 /* DiscoverVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F97FAA21D6C3961000EB881 /* DiscoverVC.swift */; };
 		3F97FAA51D6C397A000EB881 /* MeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F97FAA41D6C397A000EB881 /* MeVC.swift */; };
 		3F97FAA71D6C398C000EB881 /* MessageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F97FAA61D6C398C000EB881 /* MessageVC.swift */; };
+		3F97FAA91D6C4DC8000EB881 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F97FAA81D6C4DC8000EB881 /* MainVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		3F97FAA21D6C3961000EB881 /* DiscoverVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscoverVC.swift; sourceTree = "<group>"; };
 		3F97FAA41D6C397A000EB881 /* MeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeVC.swift; sourceTree = "<group>"; };
 		3F97FAA61D6C398C000EB881 /* MessageVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageVC.swift; sourceTree = "<group>"; };
+		3F97FAA81D6C4DC8000EB881 /* MainVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,6 +170,7 @@
 		3F97FA9C1D6C3905000EB881 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				3F97FAA81D6C4DC8000EB881 /* MainVC.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -333,6 +336,7 @@
 				3F97FA6B1D6C34F0000EB881 /* AppDelegate.swift in Sources */,
 				3F97FAA71D6C398C000EB881 /* MessageVC.swift in Sources */,
 				3F97FAA31D6C3961000EB881 /* DiscoverVC.swift in Sources */,
+				3F97FAA91D6C4DC8000EB881 /* MainVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
