@@ -8,16 +8,86 @@
 
 import UIKit
 
-class HomeVC: UITableViewController {
-
+class HomeVC: BaseVC {
+    
+    lazy var popoverAnimator:PopoverAnimator = {
+        
+        let popoverW:CGFloat = 200
+        let popoverX = UIScreen.main.bounds.size.width * 0.5 - popoverW * 0.5
+        let obj = PopoverAnimator()
+        obj.popoverFrame = CGRect(x: popoverX, y: 56, width: popoverW, height: 200)
+        return obj
+        
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
+        // 如果未登陆,设置访客界面信息
+        if !isLogin {
+            self.visitorView!.setupVisitorInfo(isHome: true, iconName: "visitordiscover_feed_image_house", message: "关注一些人，回这里看看有什么惊喜")
+            
+            return
+        }
+        
+        // 设置导航栏
+        setupNavigation()
+        
+        // 注册titleView的监听通知
+        NotificationCenter.default.addObserver(self, selector: #selector(self.titleViewChange), name: NSNotification.Name(rawValue: PopoverWillShow), object: nil)
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(self.titleViewChange), name: NSNotification.Name(rawValue: PopoverWillDismiss), object: nil)
+        
+    }
+    
+    // 设置导航栏
+    func setupNavigation() {
+        
+        self.navigationItem.leftBarButtonItem = UIBarButtonItem.createBarButtonItem(imageName: "navigationbar_friendattention", target: self, action: #selector(self.friend))
+        
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem.createBarButtonItem(imageName: "navigationbar_pop", target: self, action: #selector(self.qrcode))
+        
+        let titleBtn = TitleButton()
+        titleBtn.setTitle("也许、", for: .normal)
+        titleBtn.addTarget(self, action: #selector(self.titleViewClick(sender:)), for: .touchUpInside)
+        self.navigationItem.titleView = titleBtn
+        
+    }
+    
+    func friend() {
+        print(#function)
+    }
+    
+    // 二维码
+    func qrcode() {
+        
+        let qrcodeVC = UIStoryboard(name: "QRCodeVC", bundle: nil).instantiateInitialViewController()!
+        self.present(qrcodeVC, animated: true, completion: nil)
+        
+    }
 
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+    // 点击标题弹出菜单
+    func titleViewClick(sender:UIButton) {
+    
+        // 弹出菜单(自定义转场)
+        let popoverVC = UIStoryboard(name: "PopoverVC", bundle: nil).instantiateViewController(withIdentifier: "PopoverVC")
+
+        // 自定义转场必须实现协议
+        popoverVC.transitioningDelegate = self.popoverAnimator
+        popoverVC.modalPresentationStyle = .custom
+        self.present(popoverVC, animated: true, completion: nil)
+        
+    }
+    
+    // titleView箭头方向
+    func titleViewChange() {
+        let titleView = self.navigationItem.titleView as! TitleButton
+        titleView.isSelected = !titleView.isSelected
+    }
+    
+    deinit {
+        // 移除通知
+        NotificationCenter.default.removeObserver(self)
     }
 
     override func didReceiveMemoryWarning() {
@@ -25,71 +95,6 @@ class HomeVC: UITableViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    // MARK: - Table view data source
-
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
-    }
-
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
-    }
-
-    /*
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
-        // Configure the cell...
-
-        return cell
-    }
-    */
-
-    /*
-    // Override to support conditional editing of the table view.
-    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
-        return true
-    }
-    */
-
-    /*
-    // Override to support editing the table view.
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
-        if editingStyle == .delete {
-            // Delete the row from the data source
-            tableView.deleteRows(at: [indexPath], with: .fade)
-        } else if editingStyle == .insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
-    }
-    */
-
-    /*
-    // Override to support rearranging the table view.
-    override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
-
-    }
-    */
-
-    /*
-    // Override to support conditional rearranging of the table view.
-    override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the item to be re-orderable.
-        return true
-    }
-    */
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
+
+

@@ -7,8 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F48459A1D6EF921002BEB4A /* UIView+AutoLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4845991D6EF921002BEB4A /* UIView+AutoLayout.swift */; };
+		3F78EC5F1D73D5AC008E365C /* PopoverPresenttationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F78EC5C1D73D5AC008E365C /* PopoverPresenttationController.swift */; };
+		3F78EC601D73D5AC008E365C /* PopoverVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F78EC5D1D73D5AC008E365C /* PopoverVC.storyboard */; };
+		3F78EC631D740EFA008E365C /* PopoverAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F78EC621D740EFA008E365C /* PopoverAnimator.swift */; };
+		3F78EC651D7419FE008E365C /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F78EC641D7419FE008E365C /* Constant.swift */; };
+		3F78EC681D74333A008E365C /* QRCodeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F78EC671D74333A008E365C /* QRCodeVC.swift */; };
+		3F78EC6A1D743347008E365C /* QRCodeVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F78EC691D743347008E365C /* QRCodeVC.storyboard */; };
+		3F7BFD231D7019DE00008C98 /* UIBarButtonItem+Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7BFD221D7019DE00008C98 /* UIBarButtonItem+Category.swift */; };
+		3F7BFD251D70227F00008C98 /* TitleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7BFD241D70227F00008C98 /* TitleButton.swift */; };
 		3F97FA6B1D6C34F0000EB881 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F97FA6A1D6C34F0000EB881 /* AppDelegate.swift */; };
-		3F97FA6D1D6C34F0000EB881 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F97FA6C1D6C34F0000EB881 /* ViewController.swift */; };
 		3F97FA721D6C34F0000EB881 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F97FA711D6C34F0000EB881 /* Assets.xcassets */; };
 		3F97FA801D6C34F0000EB881 /* SinaWeiboTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F97FA7F1D6C34F0000EB881 /* SinaWeiboTests.swift */; };
 		3F97FA8B1D6C34F0000EB881 /* SinaWeiboUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F97FA8A1D6C34F0000EB881 /* SinaWeiboUITests.swift */; };
@@ -17,6 +25,9 @@
 		3F97FAA51D6C397A000EB881 /* MeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F97FAA41D6C397A000EB881 /* MeVC.swift */; };
 		3F97FAA71D6C398C000EB881 /* MessageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F97FAA61D6C398C000EB881 /* MessageVC.swift */; };
 		3F97FAA91D6C4DC8000EB881 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F97FAA81D6C4DC8000EB881 /* MainVC.swift */; };
+		3FDA34B71D6E92F700F16BD6 /* NullVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FDA34B61D6E92F700F16BD6 /* NullVC.swift */; };
+		3FEC08231D6EF3140060C594 /* BaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FEC08221D6EF3140060C594 /* BaseVC.swift */; };
+		3FEC08271D6EF43D0060C594 /* VisitorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FEC08261D6EF43D0060C594 /* VisitorView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,9 +48,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3F4845991D6EF921002BEB4A /* UIView+AutoLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+AutoLayout.swift"; sourceTree = "<group>"; };
+		3F78EC5C1D73D5AC008E365C /* PopoverPresenttationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopoverPresenttationController.swift; sourceTree = "<group>"; };
+		3F78EC5D1D73D5AC008E365C /* PopoverVC.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PopoverVC.storyboard; sourceTree = "<group>"; };
+		3F78EC621D740EFA008E365C /* PopoverAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopoverAnimator.swift; sourceTree = "<group>"; };
+		3F78EC641D7419FE008E365C /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		3F78EC671D74333A008E365C /* QRCodeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeVC.swift; sourceTree = "<group>"; };
+		3F78EC691D743347008E365C /* QRCodeVC.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = QRCodeVC.storyboard; sourceTree = "<group>"; };
+		3F7BFD221D7019DE00008C98 /* UIBarButtonItem+Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Category.swift"; sourceTree = "<group>"; };
+		3F7BFD241D70227F00008C98 /* TitleButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitleButton.swift; sourceTree = "<group>"; };
 		3F97FA671D6C34F0000EB881 /* SinaWeibo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SinaWeibo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F97FA6A1D6C34F0000EB881 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3F97FA6C1D6C34F0000EB881 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3F97FA711D6C34F0000EB881 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3F97FA761D6C34F0000EB881 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3F97FA7B1D6C34F0000EB881 /* SinaWeiboTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SinaWeiboTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -53,6 +72,9 @@
 		3F97FAA41D6C397A000EB881 /* MeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeVC.swift; sourceTree = "<group>"; };
 		3F97FAA61D6C398C000EB881 /* MessageVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageVC.swift; sourceTree = "<group>"; };
 		3F97FAA81D6C4DC8000EB881 /* MainVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
+		3FDA34B61D6E92F700F16BD6 /* NullVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NullVC.swift; sourceTree = "<group>"; };
+		3FEC08221D6EF3140060C594 /* BaseVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseVC.swift; sourceTree = "<group>"; };
+		3FEC08261D6EF43D0060C594 /* VisitorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VisitorView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +102,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3F78EC5B1D73D5AC008E365C /* Popover */ = {
+			isa = PBXGroup;
+			children = (
+				3F78EC5C1D73D5AC008E365C /* PopoverPresenttationController.swift */,
+				3F78EC5D1D73D5AC008E365C /* PopoverVC.storyboard */,
+				3F78EC621D740EFA008E365C /* PopoverAnimator.swift */,
+			);
+			path = Popover;
+			sourceTree = "<group>";
+		};
+		3F78EC661D7432F4008E365C /* QRCode */ = {
+			isa = PBXGroup;
+			children = (
+				3F78EC671D74333A008E365C /* QRCodeVC.swift */,
+				3F78EC691D743347008E365C /* QRCodeVC.storyboard */,
+			);
+			path = QRCode;
+			sourceTree = "<group>";
+		};
 		3F97FA5E1D6C34F0000EB881 = {
 			isa = PBXGroup;
 			children = (
@@ -105,7 +146,6 @@
 			children = (
 				3F97FA981D6C3905000EB881 /* Classes */,
 				3F97FA6A1D6C34F0000EB881 /* AppDelegate.swift */,
-				3F97FA6C1D6C34F0000EB881 /* ViewController.swift */,
 				3F97FA711D6C34F0000EB881 /* Assets.xcassets */,
 				3F97FA761D6C34F0000EB881 /* Info.plist */,
 			);
@@ -147,6 +187,9 @@
 		3F97FA991D6C3905000EB881 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				3F7BFD221D7019DE00008C98 /* UIBarButtonItem+Category.swift */,
+				3F7BFD241D70227F00008C98 /* TitleButton.swift */,
+				3F78EC641D7419FE008E365C /* Constant.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -162,6 +205,8 @@
 		3F97FA9B1D6C3905000EB881 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				3F78EC661D7432F4008E365C /* QRCode */,
+				3F78EC5B1D73D5AC008E365C /* Popover */,
 				3F97FAA01D6C3935000EB881 /* HomeVC.swift */,
 			);
 			path = Home;
@@ -170,7 +215,10 @@
 		3F97FA9C1D6C3905000EB881 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				3FDA34B61D6E92F700F16BD6 /* NullVC.swift */,
 				3F97FAA81D6C4DC8000EB881 /* MainVC.swift */,
+				3FEC08221D6EF3140060C594 /* BaseVC.swift */,
+				3FEC08261D6EF43D0060C594 /* VisitorView.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -194,6 +242,7 @@
 		3F97FA9F1D6C3905000EB881 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				3F4845991D6EF921002BEB4A /* UIView+AutoLayout.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -306,6 +355,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				3F97FA721D6C34F0000EB881 /* Assets.xcassets in Resources */,
+				3F78EC6A1D743347008E365C /* QRCodeVC.storyboard in Resources */,
+				3F78EC601D73D5AC008E365C /* PopoverVC.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -330,12 +381,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F78EC681D74333A008E365C /* QRCodeVC.swift in Sources */,
 				3F97FAA51D6C397A000EB881 /* MeVC.swift in Sources */,
 				3F97FAA11D6C3935000EB881 /* HomeVC.swift in Sources */,
-				3F97FA6D1D6C34F0000EB881 /* ViewController.swift in Sources */,
+				3F78EC651D7419FE008E365C /* Constant.swift in Sources */,
+				3FDA34B71D6E92F700F16BD6 /* NullVC.swift in Sources */,
+				3FEC08231D6EF3140060C594 /* BaseVC.swift in Sources */,
 				3F97FA6B1D6C34F0000EB881 /* AppDelegate.swift in Sources */,
+				3F7BFD231D7019DE00008C98 /* UIBarButtonItem+Category.swift in Sources */,
+				3F48459A1D6EF921002BEB4A /* UIView+AutoLayout.swift in Sources */,
 				3F97FAA71D6C398C000EB881 /* MessageVC.swift in Sources */,
+				3F78EC5F1D73D5AC008E365C /* PopoverPresenttationController.swift in Sources */,
+				3F78EC631D740EFA008E365C /* PopoverAnimator.swift in Sources */,
+				3FEC08271D6EF43D0060C594 /* VisitorView.swift in Sources */,
 				3F97FAA31D6C3961000EB881 /* DiscoverVC.swift in Sources */,
+				3F7BFD251D70227F00008C98 /* TitleButton.swift in Sources */,
 				3F97FAA91D6C4DC8000EB881 /* MainVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -469,7 +529,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = SinaWeibo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "cn.swift-cn.SinaWeibo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -483,7 +543,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = SinaWeibo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "cn.swift-cn.SinaWeibo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -564,6 +624,7 @@
 				3F97FA911D6C34F0000EB881 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3F97FA921D6C34F0000EB881 /* Build configuration list for PBXNativeTarget "SinaWeiboTests" */ = {
 			isa = XCConfigurationList;
@@ -572,6 +633,7 @@
 				3F97FA941D6C34F0000EB881 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3F97FA951D6C34F0000EB881 /* Build configuration list for PBXNativeTarget "SinaWeiboUITests" */ = {
 			isa = XCConfigurationList;
@@ -580,6 +642,7 @@
 				3F97FA971D6C34F0000EB881 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
