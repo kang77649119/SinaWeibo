@@ -24,8 +24,8 @@
                                     <constraint firstAttribute="height" constant="49" id="nVD-cd-svY"/>
                                 </constraints>
                                 <items>
-                                    <tabBarItem title="二维码" image="qrcode_tabbar_icon_qrcode" selectedImage="qrcode_tabbar_icon_qrcode_highlighted" id="2mE-Hb-Rau"/>
-                                    <tabBarItem title="条形码" image="qrcode_tabbar_icon_barcode" selectedImage="qrcode_tabbar_icon_barcode_highlighted" id="FJX-JX-MoM"/>
+                                    <tabBarItem tag="101" title="二维码" image="qrcode_tabbar_icon_qrcode" selectedImage="qrcode_tabbar_icon_qrcode_highlighted" id="2mE-Hb-Rau"/>
+                                    <tabBarItem tag="102" title="条形码" image="qrcode_tabbar_icon_barcode" selectedImage="qrcode_tabbar_icon_barcode_highlighted" id="FJX-JX-MoM"/>
                                 </items>
                                 <color key="barTintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="selectedImageTintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -70,19 +70,22 @@
                         <barButtonItem key="rightBarButtonItem" title="相册" id="Xfa-MP-TPC"/>
                     </navigationItem>
                     <connections>
+                        <outlet property="containerHeightCons" destination="ovi-Z4-Vcd" id="MrM-ZR-Q06"/>
                         <outlet property="qrcodeTabBar" destination="GwB-T5-jfY" id="LHT-kP-LkE"/>
+                        <outlet property="scanLineCons" destination="gHT-Ec-Ip1" id="qhZ-dR-deB"/>
+                        <outlet property="scanLineView" destination="N63-1Z-Qgl" id="Aju-AJ-d5H"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Ri-MH-QjE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1049" y="-211"/>
+            <point key="canvasLocation" x="994" y="-296"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="b81-MX-Fkv">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="UpD-Ee-OMs" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="CbJ-Nh-25u">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="CbJ-Nh-25u">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -94,7 +97,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="J22-RQ-Sz6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="201" y="-212"/>
+            <point key="canvasLocation" x="223" y="-296"/>
         </scene>
     </scenes>
     <resources>
