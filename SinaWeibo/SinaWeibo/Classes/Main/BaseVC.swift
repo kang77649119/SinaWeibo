@@ -11,7 +11,7 @@ import UIKit
 class BaseVC: UITableViewController,VisitorViewDelegate {
 
     // 是否已登录
-    var isLogin = true
+    var isLogin = false
     
     // 访客界面
     var visitorView:VisitorView?
@@ -39,14 +39,13 @@ class BaseVC: UITableViewController,VisitorViewDelegate {
     
     // 登录
     func wbLogin() {
-        
-        print(#function)
-        
+        let nav = UINavigationController(rootViewController: OAuthVC())
+        self.present(nav, animated: true, completion: nil)
     }
     
     // 注册
     func wbRegister() {
-        
+        UserAccount().loadAccount()
         print(#function)
         
     }

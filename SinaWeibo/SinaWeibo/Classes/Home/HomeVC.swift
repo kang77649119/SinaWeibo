@@ -22,7 +22,7 @@ class HomeVC: BaseVC {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+    
         // 如果未登陆,设置访客界面信息
         if !isLogin {
             self.visitorView!.setupVisitorInfo(isHome: true, iconName: "visitordiscover_feed_image_house", message: "关注一些人，回这里看看有什么惊喜")
